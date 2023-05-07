@@ -1,4 +1,5 @@
 import { FormFeedback } from './FeedbackOptions.styled';
+import PropTypes from 'prop-types';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
@@ -21,3 +22,8 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
     </FormFeedback>
   );
 }
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
