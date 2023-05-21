@@ -21,7 +21,7 @@ export function App() {
       case "bad":
         setBad(state => state + 1)
         break
-      default: new Error("its error");
+      default: new Error("it's error");
     }
   };
 
