@@ -10,7 +10,6 @@ export function App() {
 
   function onLeaveFeedback(event) {
     const name = event.target.name;
-    console.log("click")
     switch(name) {
       case "good":
         setGood(state => state + 1)
